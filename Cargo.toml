@@ -6,11 +6,10 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-libafl = { path = "/home/main/Applications/LibAFL/libafl" }
-libafl_bolts = { path = "/home/main/Applications/LibAFL/libafl_bolts" }
+libafl = "*"                                               #{ path = "/home/main/Applications/LibAFL/libafl" }
+libafl_bolts = "*"                                         #{ path = "/home/main/Applications/LibAFL/libafl_bolts" }
 reqwest = { version = "0.12.12", features = ["blocking"] }
 serde = { version = "1.0.218", features = ["derive"] }
 
 [features]
 panic = []
-
